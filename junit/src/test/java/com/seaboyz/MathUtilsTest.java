@@ -4,14 +4,21 @@ import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyInt;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class MathUtilsTest {
   MathUtils mathUtils;
 
+  @BeforeAll
+  static void BeforeAllInit() {
+    System.out.println("This is the hello from @beforeAll");
+  }
+
   @BeforeEach
   void init() {
+    System.out.println("This is the hello from @beforeEach");
     mathUtils = new MathUtils();
   }
 
