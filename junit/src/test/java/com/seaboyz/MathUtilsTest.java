@@ -1,5 +1,6 @@
 package com.seaboyz;
 
+import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyInt;
 
@@ -23,5 +24,11 @@ public class MathUtilsTest {
     MathUtils mathUtils = new MathUtils();
     int r = anyInt();
     assertEquals(Math.PI * r * r, mathUtils.computeCircleArea(r));
+  }
+
+  @Test
+  void testDivideThrowExceptionWhenPassZeroAsDemoninator() {
+    MathUtils mathUtils = new MathUtils();
+    assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0));
   }
 }

@@ -12,4 +12,8 @@ public class MathUtils {
   public Double computeCircleArea(int i) {
     return Math.PI * i * i;
   }
+
+  public double divide(int anyInt, int i) {
+    return anyInt / i;
+  }
 }
