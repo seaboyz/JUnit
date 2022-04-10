@@ -10,4 +10,10 @@ public class MathUtilsTest {
     MathUtils mathUtils = new MathUtils();
     assertEquals(mathUtils.add(1, 1), 2, "The add method should add two numbers");
   }
+
+  @Test
+  void testMultiply() {
+    MathUtils mathUtils = new MathUtils();
+    assertEquals(mathUtils.multiply(2, 2), 4, "The multiply mehod should multiply two numbers");
+  }
 }
