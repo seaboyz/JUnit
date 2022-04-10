@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyInt;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.condition.EnabledOnOs;
@@ -18,22 +18,22 @@ import org.junit.jupiter.api.condition.OS;
 public class MathUtilsTest {
   MathUtils mathUtils;
 
-  @Disabled
-  @BeforeAll
-  static void BeforeAllInit() {
-    System.out.println("This is the hello from @beforeAll");
-  }
-
   @BeforeEach
   void init() {
-    // System.out.println("This is the hello from @beforeEach");
     mathUtils = new MathUtils();
   }
 
-  @Test
-  @DisplayName("Testing add() method")
-  void add() {
-    assertEquals(2, mathUtils.add(1, 1), "should return 2");
+  @Nested
+  class Add {
+    @Test
+    void addPositive() {
+      assertEquals(2, mathUtils.add(1, 1), "should return 2");
+    }
+
+    @Test
+    void addNegtive(){
+      assertEquals(-4, mathUtils.add(-1, -3));
+    }
   }
 
   @Test
