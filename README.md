@@ -44,6 +44,12 @@ for certain operating system
 #### @REpeatedTest(3)
 
 #### @Tag
+
+```console
+mvn test
+```
+
+for maven run certain test with the same tag name
 ![](./images/Screen%20Shot%202022-04-10%20at%2010.52.45%20AM.png)
 ![](./images/Screen%20Shot%202022-04-10%20at%2010.53.00%20AM.png)
 ![](./images/Screen%20Shot%202022-04-10%20at%2010.53.14%20AM.png)
