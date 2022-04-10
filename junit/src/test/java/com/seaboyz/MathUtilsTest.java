@@ -1,6 +1,7 @@
 package com.seaboyz;
 
 import static org.junit.Assert.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyInt;
 
@@ -36,8 +37,14 @@ public class MathUtilsTest {
   }
 
   @Test
-  void testMultiply() {
-    assertEquals(4, mathUtils.multiply(2, 2), "The multiply mehod should multiply two numbers");
+  @DisplayName("Test Multiplication")
+  void multiply() {
+    // assertEquals(4, mathUtils.multiply(2, 2));
+    assertAll(
+        () -> assertEquals(4, mathUtils.multiply(2, 2)),
+        () -> assertEquals(0, mathUtils.multiply(2, 0)),
+        () -> assertEquals(anyInt() * anyInt(), mathUtils.multiply(anyInt(), anyInt())));
+
   }
 
   @Test

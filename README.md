@@ -26,3 +26,8 @@ for certain operating system
 ![](./images/Screen%20Shot%202022-04-10%20at%209.14.01%20AM.png)
 ![](./images/Screen%20Shot%202022-04-10%20at%209.19.39%20AM.png)
 ![](./images/Screen%20Shot%202022-04-10%20at%209.20.01%20AM.png)
+![](./images/Screen%20Shot%202022-04-10%20at%209.23.03%20AM.png)
+
+#### Assumptions.assumeTrue()
+#### assertAll()
+![](./images/Screen%20Shot%202022-04-10%20at%209.44.58%20AM.png)
