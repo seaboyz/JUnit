@@ -19,3 +19,10 @@
 
 for the method that is not written yet, so disable the test for this method.
 ![](./images/Screen%20Shot%202022-04-10%20at%209.07.55%20AM.png)
+
+#### @EnabledOnOs(Os.LINUX)
+
+for certain operating system
+![](./images/Screen%20Shot%202022-04-10%20at%209.14.01%20AM.png)
+![](./images/Screen%20Shot%202022-04-10%20at%209.19.39%20AM.png)
+![](./images/Screen%20Shot%202022-04-10%20at%209.20.01%20AM.png)

@@ -10,11 +10,14 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class MathUtilsTest {
   MathUtils mathUtils;
 
+  @Disabled
   @BeforeAll
   static void BeforeAllInit() {
     System.out.println("This is the hello from @beforeAll");
@@ -22,7 +25,7 @@ public class MathUtilsTest {
 
   @BeforeEach
   void init() {
-    System.out.println("This is the hello from @beforeEach");
+    // System.out.println("This is the hello from @beforeEach");
     mathUtils = new MathUtils();
   }
 
@@ -54,6 +57,18 @@ public class MathUtilsTest {
   @DisplayName("Calculate the number to the power of 2")
   void square() {
     assertEquals(4, mathUtils.square(2));
+  }
+
+  @Test
+  @EnabledOnOs(OS.MAC)
+  void macos() {
+    System.out.println("This is the hello from Mac");
+  }
+
+  @Test
+  @EnabledOnOs(OS.WINDOWS)
+  void windows() {
+    System.out.println("This is the hello from Windows");
   }
 
 }
