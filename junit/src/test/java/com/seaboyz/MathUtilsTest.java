@@ -6,6 +6,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
@@ -25,8 +26,9 @@ public class MathUtilsTest {
   }
 
   @Test
-  void testAdd() {
-    assertEquals(2, mathUtils.add(1, 1), "The add method should add two numbers");
+  @DisplayName("Testing add() method")
+  void add() {
+    assertEquals(2, mathUtils.add(1, 1), "should return 2");
   }
 
   @Test
