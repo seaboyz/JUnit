@@ -1,6 +1,7 @@
 package com.seaboyz;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.anyInt;
 
 import org.junit.jupiter.api.Test;
 
@@ -20,6 +21,7 @@ public class MathUtilsTest {
   @Test
   void testComputeCircleArea() {
     MathUtils mathUtils = new MathUtils();
-    assertEquals(Math.PI * 2 * 2, mathUtils.computeCircleArea(2));
+    int r = anyInt();
+    assertEquals(Math.PI * r * r, mathUtils.computeCircleArea(r));
   }
 }
