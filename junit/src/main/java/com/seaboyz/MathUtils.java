@@ -8,4 +8,8 @@ public class MathUtils {
   public Integer multiply(int i, int j) {
     return i * j;
   }
+
+  public Double computeCircleArea(int i) {
+    return Math.PI * i * i;
+  }
 }
