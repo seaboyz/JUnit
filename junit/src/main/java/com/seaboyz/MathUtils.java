@@ -6,6 +6,6 @@ public class MathUtils {
   }
 
   public Integer multiply(int i, int j) {
-    return null;
+    return i * j;
   }
 }
