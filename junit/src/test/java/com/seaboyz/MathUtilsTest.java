@@ -6,6 +6,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -43,7 +44,16 @@ public class MathUtilsTest {
   }
 
   @Test
-  void testDivideThrowExceptionWhenPassZeroAsDemoninator() {
+  @DisplayName("It should fail when the deniminator is 0")
+  void divide() {
     assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0));
   }
+
+  @Disabled
+  @Test
+  @DisplayName("Calculate the number to the power of 2")
+  void square() {
+    assertEquals(4, mathUtils.square(2));
+  }
+
 }
