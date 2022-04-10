@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.condition.EnabledOnOs;
@@ -24,6 +25,7 @@ public class MathUtilsTest {
   }
 
   @Nested
+  @Tag("Math")
   class Add {
     @Test
     void addPositive() {
@@ -38,6 +40,7 @@ public class MathUtilsTest {
 
   @Test
   @DisplayName("Test Multiplication")
+  @Tag("Math")
   void multiply() {
     // assertEquals(4, mathUtils.multiply(2, 2));
     assertAll(
@@ -46,6 +49,7 @@ public class MathUtilsTest {
   }
 
   @Test
+  @Tag("Circle")
   void testComputeCircleArea() {
     int r = anyInt();
     assertEquals(Math.PI * r * r, mathUtils.computeCircleArea(r));
@@ -64,6 +68,7 @@ public class MathUtilsTest {
     assertEquals(4, mathUtils.square(2));
   }
 
+  @Tag("Enviroment")
   @Test
   @EnabledOnOs(OS.MAC)
   void macos() {
