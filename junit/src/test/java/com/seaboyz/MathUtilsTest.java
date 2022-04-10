@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 
 public class MathUtilsTest {
   @Test
-  void test() {
+  void testAdd() {
     MathUtils mathUtils = new MathUtils();
-    assertEquals(2,mathUtils.add(1, 1) "The add method should add two numbers");
+    assertEquals(2, mathUtils.add(1, 1), "The add method should add two numbers");
   }
 
   @Test
