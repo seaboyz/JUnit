@@ -31,7 +31,7 @@ public class MathUtilsTest {
     }
 
     @Test
-    void addNegtive(){
+    void addNegtive() {
       assertEquals(-4, mathUtils.add(-1, -3));
     }
   }
@@ -42,9 +42,7 @@ public class MathUtilsTest {
     // assertEquals(4, mathUtils.multiply(2, 2));
     assertAll(
         () -> assertEquals(4, mathUtils.multiply(2, 2)),
-        () -> assertEquals(0, mathUtils.multiply(2, 0)),
-        () -> assertEquals(anyInt() * anyInt(), mathUtils.multiply(anyInt(), anyInt())));
-
+        () -> assertEquals(0, mathUtils.multiply(2, 0)));
   }
 
   @Test
