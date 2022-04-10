@@ -70,11 +70,6 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <configuration>
-            <groups>
-              Enviroment
-            </groups>
-          </configuration>
           <version>2.22.1</version>
         </plugin>
         <plugin>
