@@ -30,6 +30,7 @@
 - [What is NOT Unit testing?](#what-is-not-unit-testing)
   - [Don't use spring to write Unit Testing](#dont-use-spring-to-write-unit-testing)
   - [Testing Controllers](#testing-controllers)
+  - [Testing Repository](#testing-repository)
 
 ### What is testing?
 
@@ -169,7 +170,10 @@ for maven run certain test with the same tag name
 
 #### Testing Controllers
 ![](images/unit-testing/Screen%20Shot%202022-05-19%20at%203.54.29%20AM.png)
+@WebMvcTest
 
+#### Testing Repository
+![](images/unit-testing/Screen%20Shot%202022-05-19%20at%207.31.47%20AM.png)
 
 
 
