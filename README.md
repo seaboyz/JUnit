@@ -171,9 +171,10 @@ for maven run certain test with the same tag name
 #### Testing Controllers
 ![](images/unit-testing/Screen%20Shot%202022-05-19%20at%203.54.29%20AM.png)
 @WebMvcTest
+https://www.youtube.com/watch?v=NW8i2gna4qA&list=PLRhHH6sj6xkxp5qxb5g3Rlfj_8lRNK2Qi&index=2
 
 #### Testing Repository
 ![](images/unit-testing/Screen%20Shot%202022-05-19%20at%207.31.47%20AM.png)
-
+https://www.youtube.com/watch?v=wRpxKDi79mk&list=PLRhHH6sj6xkxp5qxb5g3Rlfj_8lRNK2Qi&index=3
 
 
